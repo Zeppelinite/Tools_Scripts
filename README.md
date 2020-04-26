@@ -100,8 +100,7 @@
 
 [DSfW Dude - Register Servers](http://www.dsfwdude.com/downloads/register.sh)
 
-[DSfW Dude - Remove Domain Controller](https://www.novell.com/communities/coolsolutions/wp-
-content/uploads/sites/2/2015/05/ndsdcrmx.pl)
+[DSfW Dude - Remove Domain Controller](https://www.novell.com/communities/coolsolutions/wp-content/uploads/sites/2/2015/05/ndsdcrmx.pl)
 
 [DSfW Dude - Rename DSfW Netbios Name](http://www.dsfwdude.com/downloads/change_netbios.sh)
 
