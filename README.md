@@ -5,6 +5,9 @@
 [DocFetcher - Desktop File Search/Index](http://docfetcher.sourceforge.net/en/index.html)
 [Zim - Personal Wiki](https://zim-wiki.org/)
 
+### User Application Tools
+[gather.sh - Gather log files and configs]()
+
 ### DSfW Dude - Bash Scripts
 [DSfW Dude - Add DisplayName](http://www.dsfwdude.com/downloads/add_displayName.sh)
 
