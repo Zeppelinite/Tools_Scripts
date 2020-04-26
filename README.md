@@ -20,8 +20,7 @@
 
 [DSfW Dude - Backup eDirectory script](http://www.dsfwdude.com/downloads/bkdib.sh)
 
-[DSfW Dude - Certificate Re-creation Script](http://www.novell.com/communities/node/5704/certificate-recreation-script-oes1-and-
-oes2)
+[DSfW Dude - Certificate Re-creation Script](http://www.novell.com/communities/node/5704/certificate-recreation-script-oes1-and-oes2)
 
 [DSfW Dude - Console One – Linux](http://www.dsfwdude.com/downloads/c1_136h-linux.tar.gz)
 
