@@ -21,7 +21,9 @@ mkdir $SR_Number
 touch $SR_Number/info.txt
 
 # EDIT OR COMMENT OUT
-# nslookup $TGT_HOST >> info.txt
+# TGT_HOST1='<host 1>'
+# TGT_HOST2='<host 2>'
+# nslookup $TGT_HOST1 >> info.txt
 # nslookup $TGT_HOST2 >> info.txt
 
 echo 'cat /etc/*release' > $SR_Number/info.txt
