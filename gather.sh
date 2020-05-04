@@ -20,11 +20,16 @@ create_zip() {
 mkdir $SR_Number
 touch $SR_Number/info.txt
 
-# EDIT OR COMMENT OUT
+######################### EDIT OR COMMENT OUT ############################
 # TGT_HOST1='<host 1>'
-# TGT_HOST2='<host 2>'
-# nslookup $TGT_HOST1 >> info.txt
-# nslookup $TGT_HOST2 >> info.txt
+# TGT_HOST2='google.com'
+# echo 'nslookup TGT_HOST1' >> $SR_Number/info.txt
+# nslookup $TGT_HOST1 >> $SR_Number/info.txt
+# echo 'nslookup TGT_HOST2' >> $SR_Number/info.txt
+# nslookup $TGT_HOST2 >> $SR_Number/info.txt
+tcpdump -i any -s0 -w $SR_Number/trace.cap
+echo "x" |openssl s_client -connect $SERVER > $SR_Number/openssl.txt
+#########################################################################
 
 echo 'cat /etc/*release' > $SR_Number/info.txt
 
@@ -44,9 +49,21 @@ netstat -patune |grep LISTEN >> $SR_Number/info.txt
 
 echo '==============================' >> $SR_Number/info.txt
 
-echo "ps -eaf" >> $SR_Number/info.txt
+echo "tomcat process (ps -eaf)" >> $SR_Number/info.txt
 
 ps -eaf |grep tomcat >> $SR_Number/info.txt
+
+echo '==============================' >> $SR_Number/info.txt
+
+echo "postgresql process (ps -eaf)" >> $SR_Number/info.txt
+
+ps -eaf |grep postgres >> $SR_Number/info.txt
+
+echo '==============================' >> $SR_Number/info.txt
+
+echo "ActiveMQ process (ps -eaf)" >> $SR_Number/info.txt
+
+ps -eaf |grep active >> $SR_Number/info.txt
 
 echo '==============================' >> $SR_Number/info.txt
 
@@ -68,6 +85,11 @@ top -n 2 -b |head -n 30 >> $SR_Number/info.txt
 
 echo '==============================' >> $SR_Number/info.txt
 
+echo 'Wait 2 seconds'
+sleep 2
+
+echo '==============================' >> $SR_Number/info.txt
+
 echo 'top2' >> $SR_Number/info.txt
 
 top -n 2 -b |head -n 30 >> $SR_Number/info.txt
@@ -81,20 +103,14 @@ ll /opt/netiq/idm/apps/tomcat/conf >> $SR_Number/info.txt
 echo 'end of file' >> $SR_Number/info.txt
 
 # Copy Files
-cp /opt/netiq/idm/apps/tomcat/conf/*.properties $SR_Number/
-cp /opt/netiq/idm/apps/tomcat/conf/*.xml $SR_Number/
-cp /opt/netiq/idm/apps/tomcat/conf/*.conf $SR_Number/
-cp -r /opt/netiq/idm/apps/tomcat/conf/clients/ $SR_Number/
-cp /opt/netiq/idm/apps/tomcat/conf/*.jks $SR_Number/
-cp /opt/netiq/idm/apps/tomcat/conf/*.ks $SR_Number/
+cp -R /opt/netiq/idm/apps/tomcat/conf/ $SR_Number/
+cp -R /opt/netiq/idm/apps/tomcat/bin/ $SR_Number/
+cp -R /opt/netiq/idm/apps/tomcat/logs/ $SR_Number/
 cp /opt/netiq/idm/apps/osp/*.jks $SR_Number/
 cp /opt/netiq/idm/postgres/data/postgresql.conf $SR_Number/
 cp /opt/netiq/idm/postgres/data/pg_hba.conf $SR_Number/
 
 tar -czvf $SR_Number/install-logs.tgz /var/opt/netiq/idm/log/*
-
-cp /opt/netiq/idm/apps/tomcat/bin/* $SR_Number/
-cp /opt/netiq/idm/apps/tomcat/logs/* $SR_Number/
 
 touch $SR_Number/lib-listing.txt
 ls -l /opt/netiq/idm/apps/tomcat/lib/ > $SR_Number/lib-listing.txt
@@ -118,8 +134,9 @@ echo
 # shows the path and filename in red
 echo -e "The following file will be created:" "\e[0;31m"$PWD"/"$SR_Number".tgz" "\e[0m"
 echo
+read -p "Enter your Identity Application host:port (i.e. server.com:443) " SERVER
 # Continue with processing code
-echo "Continue?  Y or N"
+echo "If tcpdump is enabled, press CTRL+C to stop capture. Continue?  Y or N"
 read answer
 echo
 echo
