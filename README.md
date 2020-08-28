@@ -6,7 +6,8 @@
 [Zim - Personal Wiki](https://zim-wiki.org/)
 
 ### User Application Tools
-[gather.sh - Gather log files and configs]()
+[gather.sh - Gather log files and configs](ftp://ftp.novell.com/outgoing/edavis/gather.sh)
+[idmcollect.sh - Gather log files and configs - Database and eDirectory Information Gathering Included](ftp://ftp.novell.com/outgoing/edavis/idmcollect.sh)
 
 ### DSfW Dude - Bash Scripts
 [DSfW Dude - Add DisplayName](http://www.dsfwdude.com/downloads/add_displayName.sh)
