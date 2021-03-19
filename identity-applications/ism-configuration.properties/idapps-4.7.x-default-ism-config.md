@@ -2,7 +2,7 @@
 description: Baseline ism-config for Identity Apps 4.7.(3)
 ---
 
-# IDApps 4.7.x Default ism-config
+# Default IDApps 4.7.x
 
 ```text
 com.netiq.idm.osp.ldap.admin-pwd._attr_obscurity = ENCRYPT
