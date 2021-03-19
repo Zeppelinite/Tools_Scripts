@@ -2,7 +2,7 @@
 description: Common Reference
 ---
 
-# Common Links & Utilities
+# Links & Utilities
 
 **Gather LDAP Traces**   
 [https://www.novell.com/support/kb/doc.php?id=7007106](https://www.novell.com/support/kb/doc.php?id=7007106) 
