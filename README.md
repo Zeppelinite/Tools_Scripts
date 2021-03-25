@@ -19,9 +19,10 @@ description: Instructions for Customers and Troubleshooting Tools
 **Running gather.sh Extract and run from anywhere on the server**:   
 Download script  
 `chmod +x gather.sh   
-./gather.sh  
-  
-When prompted, enter file name and then 'y' to continue (tcpdump will` 
+./gather.sh`  
+When prompted, enter file name and then 'y' to continue \(tcpdump is disabled by default\)
+
+
 
 \*\*\*\*
 
