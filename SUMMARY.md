@@ -19,7 +19,7 @@
     * [VIM](linux/core-linux-tools/vim.md)
   * [Linux Web & HTTP Tools](linux/linux-web-and-http-tools/README.md)
     * [cURL](linux/linux-web-and-http-tools/curl/README.md)
-      * [cURL Cheatsheet](linux/linux-web-and-http-tools/curl/curl-cheatsheet.md)
+      * [cURL Cheatsheets](linux/linux-web-and-http-tools/curl/curl-cheatsheet.md)
   * [Shibboleth](linux/shibboleth-1/README.md)
     * [Shibboleth Install](linux/shibboleth-1/shibboleth.md)
     * [Shibboleth Configurations](linux/shibboleth-1/shibboleth-configurations.md)
