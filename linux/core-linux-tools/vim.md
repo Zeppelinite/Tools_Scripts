@@ -4,6 +4,11 @@ description: VI & VIM Notes
 
 # VIM
 
+**My VIM Note**  
+`:%s/search_for_this/replace_with_this/g`  --&gt;  search and replace globally  
+`10dd`  --&gt;  delete next 10 lines  
+`10yy` then `p`  --&gt;  
+
 ## VIM FREE CHEATSHEET
 
 ![Vim Free CheatSheet](https://cheatsheet.dennyzhang.com/wp-content/uploads/2018/08/vim.png)
