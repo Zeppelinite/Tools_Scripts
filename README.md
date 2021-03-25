@@ -20,7 +20,7 @@ description: Instructions for Customers and Troubleshooting Tools
 Download script  
 `chmod +x gather.sh   
 ./gather.sh`  
-When prompted, enter file name and then 'y' to continue \(tcpdump is disabled by default\)
+When prompted, enter file name and then '`y`' to continue \(tcpdump is disabled by default\)
 
 
 
