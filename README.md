@@ -17,6 +17,7 @@ description: Instructions for Customers and Troubleshooting Tools
 [https://support.microfocus.com/kb/doc.php?id=7014795](https://support.microfocus.com/kb/doc.php?id=7014795)
 
 **Running gather.sh Extract and run from anywhere on the server**:   
+[https://www.dropbox.com/s/ugel76i89mdujhi/ua\_gather.sh?dl=0](https://www.dropbox.com/s/ugel76i89mdujhi/ua_gather.sh?dl=0)  
 Download script  
 `chmod +x gather.sh   
 ./gather.sh`  
