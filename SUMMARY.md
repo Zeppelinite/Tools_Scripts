@@ -15,5 +15,7 @@
 * [Identity Governance](identity-governance.md)
 * [Identity Reporting](identity-reporting.md)
 * [Linux](linux/README.md)
-  * [Shibboleth](linux/shibboleth.md)
+  * [Shibboleth](linux/shibboleth-1/README.md)
+    * [Shibboleth Install](linux/shibboleth-1/shibboleth.md)
+    * [Shibboleth Configurations](linux/shibboleth-1/shibboleth-configurations.md)
 

@@ -1,10 +1,8 @@
 ---
-description: Reference Notes and Docs for Lab Install of Shibboleth
+description: Lab Install of Shibboleth
 ---
 
-# Shibboleth
-
-
+# Shibboleth Install
 
 ### 1. Introduction
 
