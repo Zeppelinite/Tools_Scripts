@@ -14,4 +14,6 @@
     * [Default IDApps 4.7.x server.xml](identity-applications/server.xml/default-idapps-4.7.x-server.xml.md)
 * [Identity Governance](identity-governance.md)
 * [Identity Reporting](identity-reporting.md)
+* [Linux](linux/README.md)
+  * [Shibboleth](linux/shibboleth.md)
 
