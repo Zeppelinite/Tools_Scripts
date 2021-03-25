@@ -17,13 +17,11 @@ description: Instructions for Customers and Troubleshooting Tools
 [https://support.microfocus.com/kb/doc.php?id=7014795](https://support.microfocus.com/kb/doc.php?id=7014795)
 
 **Running gather.sh Extract and run from anywhere on the server**:   
-`unzip gather-*.sh   
-chmod +x gather.sh   
-./gather.sh`
+Download script  
+`chmod +x gather.sh   
+./gather.sh  
+  
+When prompted, enter file name and then 'y' to continue (tcpdump will` 
 
 \*\*\*\*
-
-\*\*\*\*
-
-
 
