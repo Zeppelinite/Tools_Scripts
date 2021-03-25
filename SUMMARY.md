@@ -10,6 +10,7 @@
     * [Default IDApps 4.7.x](identity-applications/ism-configuration.properties/idapps-4.7.x-default-ism-config.md)
     * [Default IDApps 4.8.x](identity-applications/ism-configuration.properties/default-idapps-4.8.x.md)
   * [server.xml](identity-applications/server.xml/README.md)
+    * [Default IDApps 4.8.x server.xml](identity-applications/server.xml/default-idapps-4.8.x-server.xml.md)
     * [Default IDApps 4.7.x server.xml](identity-applications/server.xml/default-idapps-4.7.x-server.xml.md)
 * [Identity Governance](identity-governance.md)
 
