@@ -9,3 +9,11 @@ description: Quick notes for IDGov
 `select * from perf_event_log order by id`  
 `select * from review_item_action order by id`
 
+**Configutil.sh**
+
+```text
+cd /opt/netiq/idm/apps/idgov
+./bin/configutil.sh -password db_password -console
+es
+```
+
