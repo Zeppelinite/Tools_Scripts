@@ -4,7 +4,9 @@ description: Baseline server.xml for IDApps 4.8
 
 # Default IDApps 4.8.x server.xml
 
-```text
+_**To enable Tomcat clustering, remove lines 92 & 94 from config**_
+
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
@@ -125,4 +127,3 @@ description: Baseline server.xml for IDApps 4.8
 
 
 ```
-
